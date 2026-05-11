@@ -102,10 +102,9 @@ li.dropdown {
     display: block;
 }*/
 
-/*flashy button:
-button:hover {
-    background-color:rgb(255, 5, 55);
-}*/
+.buy :hover { /*This doesn't work. Find out why*/
+    background-color:rgb(255, 242, 57);
+}
 
 .sell-panel {    /*for the div with the bike image and title*/
     width: 700px;
@@ -126,19 +125,12 @@ button:hover {
     background-color: khaki;
 }
 
-.bike1 { /*for the first bike shown on the left side*/
+.bike { /*for the first bike shown on the left side*/
     position: relative;
     width:350px;
     height:350px; 
     border: 4px black solid;
     border-radius: 10px;
-}
-.bike2 { /*for the second bike shown on the right side*/
-    width:350px; 
-    height:350px; 
-    border: 4px black solid;
-    border-radius: 10px;
-    left: 700px;
 }
 
 .model { /*for the h4 tag which is the title of the bike model in the div*/
@@ -150,15 +142,8 @@ button:hover {
 
 
 
-.price { /*self explanatory*/
+div .price { /*self explanatory*/
     position:relative; 
-    bottom: 210px; 
-    left: 390px; 
-    font-size: 28px; 
-    font-family:Courier;
-}
-.price2 { /*the second bike's price*/
-    position: relative; 
     bottom: 210px; 
     left: 390px; 
     font-size: 28px; 
@@ -172,21 +157,14 @@ button:hover {
     font-size: larger;
 }
 
-.buy { /*for the purchase button that does nothing*/
+div .buy { /*for the purchase button*/
     position:relative;
     bottom:210px;
     left: 350px;
     width: 200px;
     height: 50px;
-	background-color:rgb(223, 91, 91);
-}
-.buy2 { /*the second bike's button*//* They are the same fucking thing!? Why??*/
-    position:relative;
-    bottom:210px;
-    left: 350px;
-    width: 200px;
-    height: 50px;
-	background-color:rgb(223, 91, 91);
+	  background-color:rgb(223, 91, 91);
+
 }
 
 .overlay {
