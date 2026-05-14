@@ -1,7 +1,8 @@
 ﻿body {
-    background-color: white;
+    background-color: rgb(189, 238, 238);
 }
 
+/*Navbar*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -9,11 +10,9 @@ ul {
     overflow: hidden;
     background-color: #38444d;
 }
-
 li {
     float: left;
 }
-
     li a, .dropbtn {
         display: inline-block;
         color: white;
@@ -21,15 +20,12 @@ li {
         padding: 14px 16px;
         text-decoration: none;
     }
-
         li a:hover, .dropdown:hover .dropbtn {
             background-color: red;
         }
-
     li.dropdown {
         display: inline-block;
     }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -38,7 +34,6 @@ li {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
     .dropdown-content a {
         color: black;
         padding: 12px 16px;
@@ -46,15 +41,15 @@ li {
         display: block;
         text-align: left;
     }
-
         .dropdown-content a:hover {
-            background-color: #f1f1f1;
+            background-color: #dfd9d9;
         }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+
+/*Table and its contents*/
 table {
     font-size: 24px;
     display: flex;
@@ -63,7 +58,9 @@ table {
     border-collapse: separate;
     border-spacing: 20px;
 }
-
+img.space{
+    visibility: hidden;
+}
 img#bike {
     width: 400px;
     height: 300px;
@@ -71,6 +68,4 @@ img#bike {
     border-radius: 10px;
 }
 
-p {
-    font-size: larger;
-}
+p {font-size: larger;}

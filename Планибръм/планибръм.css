@@ -49,7 +49,7 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #dfd9d9;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -102,10 +102,6 @@ li.dropdown {
     display: block;
 }*/
 
-.buy :hover { /*This doesn't work. Find out why*/
-    background-color:rgb(255, 242, 57);
-}
-
 .sell-panel {    /*for the div with the bike image and title*/
     width: 700px;
     height: 357px;
@@ -157,16 +153,27 @@ div .price { /*self explanatory*/
     font-size: larger;
 }
 
-div .buy { /*for the purchase button*/
+div a.BuyButton { /*for the purchase button*/
+    display:inline-block;  
     position:relative;
     bottom:210px;
     left: 350px;
     width: 200px;
-    height: 50px;
-	  background-color:rgb(223, 91, 91);
-
+    height: 40px;
+    border:2px solid #1c1b1b;
+    text-align: center;
+    font-size: 130%;
+    color: #1c1b1b;
+    text-decoration-line: none;
+    padding-bottom:-15px;
+    padding-top:10px;
+    background-color: rgb(224, 100, 100);
+}
+.BuyButton:hover { /*This doesn't work. Find out why*/
+    background-color:rgb(224, 70, 80);
 }
 
+/*The link on the picture of the bike*/
 .overlay {
   position:absolute;
   top:0;
@@ -179,18 +186,17 @@ div .buy { /*for the purchase button*/
   transition: .5s ease;
   background-color: #292b2c;
 }
-
 .container:hover .overlay {
-  opacity: 0.6;
+  opacity: 0.75;
 }
-
-.text {
+.info {
   color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
-    -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /*This thing is OP but I have no idea how it works*/
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;}
+
