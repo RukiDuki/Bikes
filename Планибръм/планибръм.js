@@ -1,3 +1,3 @@
 function changeImage() {
-        document.getElementById("img").src="????.jpg";
+        document.getElementById("img").src=".jpg";
     }// JavaScript Document
