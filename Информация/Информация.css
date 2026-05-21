@@ -51,3 +51,14 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/*зелен син*/
+img{
+  border:solid #38444d 2px;
+  float: left;
+}
+
+div #stats{
+  /*LITERALLY NOTHING WORKS😭*/
+  padding-left: 10px;
+}
