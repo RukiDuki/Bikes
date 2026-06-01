@@ -71,18 +71,28 @@
                 </div>
             </div>
         
+<<<<<<< Updated upstream
             <!--Сега загрях, че дори нямам разновидности на колелата! Явно бяло и черно са отделен модел колело-->
 	<!--<script>
 		function changeImage() {
         	document.getElementById("img").src="бяло.jpg";
 			}
 	</script>-->
+=======
+            <!--Сега загрях, че дори нямам разновидности на колелата! Явно бяло и черно са отделен модел колело
+            Не намирам този модел колело нито други модели с различни цветове! Функцията си работи (само с бутон съм я тествала),
+            но няма да мога да я използвам все още-->
+	<script>
+		
+        
+	</script>
+>>>>>>> Stashed changes
 	
         <!--Bike 2. синьо-бял-->
             <div class="sell-panel2">
 
                 <div class="message container">
-                    <img class="bike"
+                    <img class="bike" id="stereo"
                         src="..\снимки\stereo-blu-wht.jpg">
                     <div class="overlay">
                         <a class="info" href="../Информация/зелен син.html" style=" color:#FFFFFF ">Кликни за допълнителна информация</a>
@@ -92,11 +102,37 @@
                     <h4 class="model">ВЕЛОСИПЕД 27.5 CUBE STEREO <br> ONE22 PRO BLU WHT</h4>
                 <div>	
                     <p class="price">Цена: 3399.00 лв</p>
+<<<<<<< Updated upstream
         
                     <select type="dropdown" class="size">
+=======
+                    <!--
+                    <select type="dropdown" id="colorSelect" class="size">
+>>>>>>> Stashed changes
                         <option value="black">черен</option>
-                        <option value="white">бял</option>
+                        <option value="white" onclick="changeImage()">бял</option>
                     </select> 
+
+                <div class="size">
+                    <button class="dropdown">color</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="changeImage()">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>-->
+
+                <ul>
+                <li class="dropdown" id="colorSelect">
+                <a href="javascript:void(0)" class="dropbtn">colors</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="changeImage()" id="white">white</a>
+                    <a href="#">Шосейни велосипеди</a>
+                    <a href="#">Електрически велосипеди</a>
+                </div>
+                </li>
+                </ul>
+
 
                     <a class="BuyButton" style="bottom:225px;">Поръчай</a>
                 </div>
